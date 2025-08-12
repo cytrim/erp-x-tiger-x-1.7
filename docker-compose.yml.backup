@@ -1,0 +1,42 @@
+# © 2025 Tiger X Panel — Proprietary/UI modules by Jan Köppke. Do not copy without permission.
+
+services:
+  mongo:
+    image: mongo:6
+    restart: unless-stopped
+    ports: ["27017:27017"]
+    volumes: ["mongo_data:/data/db"]
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.runCommand({ ping: 1 }).ok"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  api:
+    build: ./server
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      - AUTO_SEED=true
+      - DEFAULT_LOCALE=en
+      - PORT=5000
+      - MONGO_URI=mongodb://mongo:27017/erp
+      - JWT_SECRET=dev-change-me
+    ports: ["5000:5000"]
+    depends_on:
+      mongo:
+        condition: service_healthy
+
+  web:
+    build: ./web
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      - VITE_API_URL=http://localhost:5000/api
+    ports: ["5173:5173"]
+    depends_on:
+      api:
+        condition: service_started
+
+volumes:
+  mongo_data:

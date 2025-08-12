@@ -1,0 +1,16 @@
+/* © 2025 Tiger X Panel — Proprietary/UI modules by Jan Köppke. Do not copy without permission.
+*/
+
+:root { --txp-bg:#0f0f0f; --txp-panel:#141414; --txp-muted:#2a2a2a; --txp-text:#eaeaea; --txp-subtext:#9a9a9a; --txp-primary:#ff6b35; }
+html, body, #root { height: 100%; }
+body { margin: 0; background: var(--txp-bg); color: var(--txp-text); }
+.ant-layout { min-height: 100vh; }
+.ant-layout-header { background: var(--txp-panel) !important; }
+.ant-layout-sider { background: var(--txp-panel) !important; }
+.ant-menu-dark.ant-menu-root { background: var(--txp-panel); }
+.brand { color: #fff; font-weight: 800; letter-spacing: .5px; }
+.brand-accent { color: var(--txp-primary); }
+.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.kpi-card { background: var(--txp-panel) !important; border: 1px solid var(--txp-muted); }
+.kpi-card .ant-statistic-title { color: var(--txp-subtext); }
+.kpi-card .ant-statistic-content { font-weight: 700; }

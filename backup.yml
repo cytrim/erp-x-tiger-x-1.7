@@ -1,0 +1,31 @@
+services:
+  backup:
+    image: offen/docker-volume-backup:v2
+    restart: unless-stopped
+    environment:
+      BACKUP_FILENAME: "tigerx-backup-%Y-%m-%d_%H-%M-%S.tar.gz"
+      BACKUP_RETENTION_DAYS: "7"
+      BACKUP_PRUNING_PREFIX: "tigerx-backup-"
+      BACKUP_STOP_DURING_BACKUP_LABEL: "tigerx.backup.stop"
+      BACKUP_COMPRESSION: "gz"
+      BACKUP_ARCHIVE: "/archive"
+      EXEC_LABEL: "tigerx.backup.exec"
+      EXEC_FORWARD_OUTPUT: "true"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - mongo_data:/backup/mongo_data:ro
+      - ./backups:/archive
+    labels:
+      - "tigerx.backup=true"
+    networks:
+      - tigerx-network
+
+networks:
+  tigerx-network:
+    external: true
+    name: tigerx-panel_default
+
+volumes:
+  mongo_data:
+    external: true
+    name: tigerx-panel_mongo_data

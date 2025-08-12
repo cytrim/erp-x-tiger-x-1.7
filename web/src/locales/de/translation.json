@@ -1,0 +1,99 @@
+{
+  "app": {
+    "title": "Tiger X Panel"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "customers": "Kunden",
+    "products": "Produkte",
+    "quotes": "Angebote",
+    "invoices": "Rechnungen",
+    "logout": "Abmelden",
+    "payments": "Zahlungen",
+    "settings": "Meine Einstellungen"
+  },
+  "auth": {
+    "login": "Anmelden",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "welcome": "Willkommen!",
+    "failed": "Login fehlgeschlagen"
+  },
+  "customers": {
+    "new": "Neuer Kunde",
+    "name": "Name",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "address": "Adresse",
+    "saved": "Gespeichert"
+  },
+  "products": {
+    "new": "Neues Produkt",
+    "sku": "Artikelnummer",
+    "name": "Name",
+    "price": "Preis",
+    "taxRate": "MwSt %",
+    "unit": "Einheit",
+    "saved": "Gespeichert"
+  },
+  "quotes": {
+    "new": "Neues Angebot",
+    "number": "Nummer",
+    "status": "Status",
+    "customer": "Kunde",
+    "date": "Datum",
+    "validUntil": "Gültig bis"
+  },
+  "invoices": {
+    "new": "Neue Rechnung",
+    "number": "Nummer",
+    "status": "Status",
+    "customer": "Kunde",
+    "date": "Datum",
+    "dueDate": "Fällig am"
+  },
+  "dashboard": {
+    "customers": "Kunden",
+    "quotes": "Offene Angebote",
+    "invoices": "Rechnungen (Monat)"
+  },
+  "payments": {
+    "add": "Zahlung hinzufügen",
+    "add_payment": "Zahlung hinzufügen",
+    "created": "Zahlung gespeichert",
+    "deleted": "Zahlung gelöscht",
+    "invoice": "Rechnung",
+    "method": "Zahlungsart",
+    "method_cash": "Bar",
+    "method_bank": "Überweisung",
+    "method_card": "Karte",
+    "method_other": "Andere",
+    "amount": "Betrag",
+    "currency": "Währung",
+    "date": "Datum",
+    "reference": "Referenz",
+    "status": "Status",
+    "notes": "Notizen"
+  },
+  "settings": {
+    "title": "Meine Einstellungen",
+    "saved": "Einstellungen gespeichert",
+    "locale": "Sprache",
+    "timezone": "Zeitzone",
+    "date_format": "Datumsformat",
+    "number_format": "Zahlenformat",
+    "currency": "Standardwährung",
+    "email_signature": "E-Mail Signatur"
+  },
+  "common": {
+    "save": "Speichern",
+    "delete": "Löschen",
+    "actions": "Aktionen",
+    "confirm_delete": "Diesen Eintrag löschen?"
+  },
+  "errors": {
+    "load_failed": "Laden fehlgeschlagen",
+    "save_failed": "Speichern fehlgeschlagen",
+    "delete_failed": "Löschen fehlgeschlagen"
+  }
+}

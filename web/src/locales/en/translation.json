@@ -1,0 +1,99 @@
+{
+  "app": {
+    "title": "Tiger X Panel"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "customers": "Customers",
+    "products": "Products",
+    "quotes": "Quotes",
+    "invoices": "Invoices",
+    "logout": "Logout",
+    "payments": "Payments",
+    "settings": "My Settings"
+  },
+  "auth": {
+    "login": "Login",
+    "email": "Email",
+    "password": "Password",
+    "welcome": "Welcome!",
+    "failed": "Login failed"
+  },
+  "customers": {
+    "new": "New Customer",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "saved": "Saved"
+  },
+  "products": {
+    "new": "New Product",
+    "sku": "SKU",
+    "name": "Name",
+    "price": "Price",
+    "taxRate": "Tax %",
+    "unit": "Unit",
+    "saved": "Saved"
+  },
+  "quotes": {
+    "new": "New Quote",
+    "number": "Number",
+    "status": "Status",
+    "customer": "Customer",
+    "date": "Date",
+    "validUntil": "Valid until"
+  },
+  "invoices": {
+    "new": "New Invoice",
+    "number": "Number",
+    "status": "Status",
+    "customer": "Customer",
+    "date": "Date",
+    "dueDate": "Due date"
+  },
+  "dashboard": {
+    "customers": "Customers",
+    "quotes": "Open Quotes",
+    "invoices": "Invoices (month)"
+  },
+  "payments": {
+    "add": "Add payment",
+    "add_payment": "Add Payment",
+    "created": "Payment saved",
+    "deleted": "Payment deleted",
+    "invoice": "Invoice",
+    "method": "Method",
+    "method_cash": "Cash",
+    "method_bank": "Bank transfer",
+    "method_card": "Card",
+    "method_other": "Other",
+    "amount": "Amount",
+    "currency": "Currency",
+    "date": "Date",
+    "reference": "Reference",
+    "status": "Status",
+    "notes": "Notes"
+  },
+  "settings": {
+    "title": "My Settings",
+    "saved": "Settings saved",
+    "locale": "Language",
+    "timezone": "Time zone",
+    "date_format": "Date format",
+    "number_format": "Number format",
+    "currency": "Default currency",
+    "email_signature": "Email signature"
+  },
+  "common": {
+    "save": "Save",
+    "delete": "Delete",
+    "actions": "Actions",
+    "confirm_delete": "Delete this item?"
+  },
+  "errors": {
+    "load_failed": "Load failed",
+    "save_failed": "Save failed",
+    "delete_failed": "Delete failed"
+  }
+}
